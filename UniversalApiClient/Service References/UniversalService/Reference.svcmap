@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f73dbd63-3244-4169-9e52-9d1843d5592e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\Users\Acer\Documents\Visual Studio 2015\Projects\UniversalApiClient\UniversalApiClient\Wsdl\universal_v40_0\UniversalRecord.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SessionContext_v1.xsd" MetadataType="Schema" ID="0896e01d-34d7-4553-a550-db93f830205b" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/SessionContext_v1/SessionContext_v1.xsd" />
+    <MetadataFile FileName="Vehicle.xsd" MetadataType="Schema" ID="407e51ea-04a8-46f4-9fe1-e6d6fd9069e4" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/vehicle_v40_0/Vehicle.xsd" />
+    <MetadataFile FileName="Passive.xsd" MetadataType="Schema" ID="7bf3ce66-f0e1-438c-b452-608a55c35f71" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/passive_v40_0/Passive.xsd" />
+    <MetadataFile FileName="CommonReqRsp.xsd" MetadataType="Schema" ID="13f08a41-cf2e-4a03-9b36-be7839cf3866" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/common_v40_0/CommonReqRsp.xsd" />
+    <MetadataFile FileName="AbstractUniversalRecordServices.wsdl" MetadataType="Wsdl" ID="e75670e6-3668-4528-ab96-60c94225835b" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/universal_v40_0/UniversalRecordAbstract.wsdl" />
+    <MetadataFile FileName="Air.xsd" MetadataType="Schema" ID="2aaf0e26-154b-46ca-9fec-d410ba89e698" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/air_v40_0/Air.xsd" />
+    <MetadataFile FileName="Hotel.xsd" MetadataType="Schema" ID="e122d322-4c0a-4e17-a320-a91077513d59" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/hotel_v40_0/Hotel.xsd" />
+    <MetadataFile FileName="Rail.xsd" MetadataType="Schema" ID="78a8fb0c-bc18-4a8c-b120-a2ed7b1bca9b" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/rail_v40_0/Rail.xsd" />
+    <MetadataFile FileName="UniversalRecord.xsd" MetadataType="Schema" ID="7a82baed-272c-4f15-8c22-68d5d03b7282" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/universal_v40_0/UniversalRecord.xsd" />
+    <MetadataFile FileName="UniversalRecordServices.wsdl" MetadataType="Wsdl" ID="0bfe0f46-a703-4501-bac1-dcc4b64aa275" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/universal_v40_0/UniversalRecord.wsdl" />
+    <MetadataFile FileName="UniversalRecordReqRsp.xsd" MetadataType="Schema" ID="fdce8cec-aee9-4d26-a8e9-eaf350f3b875" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/universal_v40_0/UniversalRecordReqRsp.xsd" />
+    <MetadataFile FileName="Cruise.xsd" MetadataType="Schema" ID="2508acb3-08c1-463e-bfdd-27c14ab09bbb" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/cruise_v40_0/Cruise.xsd" />
+    <MetadataFile FileName="Common.xsd" MetadataType="Schema" ID="f5b2ed26-a177-4785-b74d-5fb63291e514" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/common_v40_0/Common.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

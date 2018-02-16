@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Hotel Search Results";
+}
+
+<h2>Hotel Search Results: </h2>
+
+@foreach (var hotelName in @ViewBag.result)
+{
+     <h4 style="color: green;">@hotelName.Name</h4>
+     <h4 style="color: green;">@hotelName.HotelCode</h4>   
+}

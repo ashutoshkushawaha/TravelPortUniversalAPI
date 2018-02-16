@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dd3d568b-b266-4471-b718-74f42a7ce3c6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\Users\Acer\Documents\Visual Studio 2015\Projects\UniversalApiClient\UniversalApiClient\Wsdl\hotel_v40_0\Hotel.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HotelServices.wsdl" MetadataType="Wsdl" ID="c4ae028d-10b5-40c0-9f27-55636038561a" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/hotel_v40_0/Hotel.wsdl" />
+    <MetadataFile FileName="Hotel.xsd" MetadataType="Schema" ID="3d6edaee-4066-4b42-97a4-b851eb57359c" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/hotel_v40_0/Hotel.xsd" />
+    <MetadataFile FileName="HotelReqRsp.xsd" MetadataType="Schema" ID="40d2dc4e-accc-4351-a908-4c11c857aa8e" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/hotel_v40_0/HotelReqRsp.xsd" />
+    <MetadataFile FileName="CommonReqRsp.xsd" MetadataType="Schema" ID="98c509db-c8da-4ba9-9fad-678a6678f6df" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/common_v40_0/CommonReqRsp.xsd" />
+    <MetadataFile FileName="Common.xsd" MetadataType="Schema" ID="b59a7ce4-33c1-4073-884e-b9a7b6bd405b" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/common_v40_0/Common.xsd" />
+    <MetadataFile FileName="AbstractHotelServices.wsdl" MetadataType="Wsdl" ID="5fdcef2e-60ca-4ff9-bcba-53edf4b7a3b1" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/hotel_v40_0/HotelAbstract.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

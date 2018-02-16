@@ -1,0 +1,1438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D409A5A5-C725-4003-9433-190E4E686DFE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniversalApiClient</RootNamespace>
+    <AssemblyName>UniversalApiClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>25763</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Client_Class\AirClients\AirBookTest.cs" />
+    <Compile Include="App_Client_Class\AirClients\AirFareDisplay.cs" />
+    <Compile Include="App_Client_Class\AirClients\AirLFSTest.cs" />
+    <Compile Include="App_Client_Class\AirClients\AirportDetails.cs" />
+    <Compile Include="App_Client_Class\AirClients\AirReq.cs" />
+    <Compile Include="App_Client_Class\AirClients\AirSvcTest.cs" />
+    <Compile Include="App_Client_Class\AirClients\AirTicketTest.cs" />
+    <Compile Include="App_Client_Class\HotelClients\HotelClient.cs" />
+    <Compile Include="App_Client_Class\UniversalRecordClients\UniversalRetrieveTest.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AirController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AirService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SystemService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UniversalService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UtilService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\VechileService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\CommonUtility.cs" />
+    <Compile Include="Utility\Helper.cs" />
+    <Compile Include="Utility\HttpHeaderMessageInspector.cs" />
+    <Compile Include="Utility\ObjectDumper.cs" />
+    <Compile Include="Utility\ProjectConstants.cs" />
+    <Compile Include="Utility\WsdlService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\jquery.datetimepicker.css" />
+    <Content Include="Content\template.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="images\airlines\airarabia.png" />
+    <Content Include="images\airlines\americanairlines.png" />
+    <Content Include="images\airlines\chinasouthern.png" />
+    <Content Include="images\airlines\qatarairways.png" />
+    <Content Include="images\media\user.jpg" />
+    <Content Include="images\media\user_small.jpg" />
+    <Content Include="images\style\bg_01.jpg" />
+    <Content Include="images\style\cb_check.png" />
+    <Content Include="images\style\cb_uncheck.png" />
+    <Content Include="images\style\favicon.ico" />
+    <Content Include="images\style\logo.png" />
+    <Content Include="images\style\rb_check.png" />
+    <Content Include="images\style\rb_uncheck.png" />
+    <Content Include="images\style\select.png" />
+    <Content Include="images\style\select_white.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="js\system.js" />
+    <Content Include="less\forms.css" />
+    <Content Include="lib\customscrollbar\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="lib\customscrollbar\jquery.mCustomScrollbar.min.css" />
+    <Content Include="lib\customscrollbar\mCSB_buttons.png" />
+    <Content Include="lib\datepicker\datepicker.css" />
+    <Content Include="lib\datepicker\datepicker.js" />
+    <Content Include="lib\datepicker_old\DateTimePicker-i18n.js" />
+    <Content Include="lib\datepicker_old\DateTimePicker-ltie9.css" />
+    <Content Include="lib\datepicker_old\DateTimePicker-ltie9.js" />
+    <Content Include="lib\datepicker_old\DateTimePicker.css" />
+    <Content Include="lib\datepicker_old\DateTimePicker.js" />
+    <Content Include="lib\datepicker_old\note.txt" />
+    <Content Include="lib\elevatezoom\jquery.elevatezoom.js" />
+    <Content Include="lib\elevatezoom\loader.gif" />
+    <Content Include="lib\fancybox\blank.gif" />
+    <Content Include="lib\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="lib\fancybox\fancybox_loading.gif" />
+    <Content Include="lib\fancybox\fancybox_overlay.png" />
+    <Content Include="lib\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="lib\fancybox\fancybox_sprite.png" />
+    <Content Include="lib\fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="lib\fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="lib\fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="lib\fancybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="lib\fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="lib\fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="lib\fancybox\jquery.fancybox.css" />
+    <Content Include="lib\fancybox\jquery.fancybox.js" />
+    <Content Include="lib\fancybox\jquery.fancybox.pack.js" />
+    <Content Include="lib\fancybox\jquery.mousewheel.pack.js" />
+    <Content Include="lib\fileupload\file-input.css" />
+    <Content Include="lib\fileupload\file-input.js" />
+    <Content Include="lib\flagstrap\flags.css" />
+    <Content Include="lib\flagstrap\flags.png" />
+    <Content Include="lib\flagstrap\instruction.txt" />
+    <Content Include="lib\flagstrap\jquery.flagstrap.js" />
+    <Content Include="lib\owlcarousel\ajax-loader.gif" />
+    <Content Include="lib\owlcarousel\owl.carousel.min.css" />
+    <Content Include="lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="lib\owlcarousel\owl.video.play.png" />
+    <Content Include="lib\progressbar\custom_bars.css" />
+    <Content Include="lib\progressbar\custom_bars.js" />
+    <Content Include="lib\select2\select2.min.css" />
+    <Content Include="lib\select2\select2.min.js" />
+    <Content Include="lib\selectfield\select.css" />
+    <Content Include="lib\selectfield\select.js" />
+    <Content Include="lib\tabs\jquery.responsiveTabs.js" />
+    <Content Include="lib\tabs\responsive-tabs.css" />
+    <Content Include="lib\waypoint\animate.css" />
+    <Content Include="lib\waypoint\animate.min.js" />
+    <Content Include="lib\waypoint\waypoints.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\wells.less" />
+    <Content Include="Content\bootstrap\variables.less" />
+    <Content Include="Content\bootstrap\utilities.less" />
+    <Content Include="Content\bootstrap\type.less" />
+    <Content Include="Content\bootstrap\tooltip.less" />
+    <Content Include="Content\bootstrap\thumbnails.less" />
+    <Content Include="Content\bootstrap\theme.less" />
+    <Content Include="Content\bootstrap\tables.less" />
+    <Content Include="Content\bootstrap\scaffolding.less" />
+    <Content Include="Content\bootstrap\responsive-utilities.less" />
+    <Content Include="Content\bootstrap\responsive-embed.less" />
+    <Content Include="Content\bootstrap\progress-bars.less" />
+    <Content Include="Content\bootstrap\print.less" />
+    <Content Include="Content\bootstrap\popovers.less" />
+    <Content Include="Content\bootstrap\panels.less" />
+    <Content Include="Content\bootstrap\pagination.less" />
+    <Content Include="Content\bootstrap\pager.less" />
+    <Content Include="Content\bootstrap\normalize.less" />
+    <Content Include="Content\bootstrap\navs.less" />
+    <Content Include="Content\bootstrap\navbar.less" />
+    <Content Include="Content\bootstrap\modals.less" />
+    <Content Include="Content\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="Content\bootstrap\mixins\text-overflow.less" />
+    <Content Include="Content\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="Content\bootstrap\mixins\table-row.less" />
+    <Content Include="Content\bootstrap\mixins\tab-focus.less" />
+    <Content Include="Content\bootstrap\mixins\size.less" />
+    <Content Include="Content\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="Content\bootstrap\mixins\resize.less" />
+    <Content Include="Content\bootstrap\mixins\reset-text.less" />
+    <Content Include="Content\bootstrap\mixins\reset-filter.less" />
+    <Content Include="Content\bootstrap\mixins\progress-bar.less" />
+    <Content Include="Content\bootstrap\mixins\panels.less" />
+    <Content Include="Content\bootstrap\mixins\pagination.less" />
+    <Content Include="Content\bootstrap\mixins\opacity.less" />
+    <Content Include="Content\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="Content\bootstrap\mixins\nav-divider.less" />
+    <Content Include="Content\bootstrap\mixins\list-group.less" />
+    <Content Include="Content\bootstrap\mixins\labels.less" />
+    <Content Include="Content\bootstrap\mixins\image.less" />
+    <Content Include="Content\bootstrap\mixins\hide-text.less" />
+    <Content Include="Content\bootstrap\mixins\grid.less" />
+    <Content Include="Content\bootstrap\mixins\grid-framework.less" />
+    <Content Include="Content\bootstrap\mixins\gradients.less" />
+    <Content Include="Content\bootstrap\mixins\forms.less" />
+    <Content Include="Content\bootstrap\mixins\clearfix.less" />
+    <Content Include="Content\bootstrap\mixins\center-block.less" />
+    <Content Include="Content\bootstrap\mixins\buttons.less" />
+    <Content Include="Content\bootstrap\mixins\border-radius.less" />
+    <Content Include="Content\bootstrap\mixins\background-variant.less" />
+    <Content Include="Content\bootstrap\mixins\alerts.less" />
+    <Content Include="Content\bootstrap\mixins.less" />
+    <Content Include="Content\bootstrap\media.less" />
+    <Content Include="Content\bootstrap\list-group.less" />
+    <Content Include="Content\bootstrap\labels.less" />
+    <Content Include="Content\bootstrap\jumbotron.less" />
+    <Content Include="Content\bootstrap\input-groups.less" />
+    <Content Include="Content\bootstrap\grid.less" />
+    <Content Include="Content\bootstrap\glyphicons.less" />
+    <Content Include="Content\bootstrap\forms.less" />
+    <Content Include="Content\bootstrap\dropdowns.less" />
+    <Content Include="Content\bootstrap\component-animations.less" />
+    <Content Include="Content\bootstrap\code.less" />
+    <Content Include="Content\bootstrap\close.less" />
+    <Content Include="Content\bootstrap\carousel.less" />
+    <Content Include="Content\bootstrap\buttons.less" />
+    <Content Include="Content\bootstrap\button-groups.less" />
+    <Content Include="Content\bootstrap\breadcrumbs.less" />
+    <Content Include="Content\bootstrap\bootstrap.less" />
+    <Content Include="Content\bootstrap\badges.less" />
+    <Content Include="Content\bootstrap\alerts.less" />
+    <Content Include="less\clearfix.less" />
+    <Content Include="less\forms.less" />
+    <Content Include="less\mixins.less" />
+    <Content Include="less\slider.less" />
+    <Content Include="less\template.less" />
+    <Content Include="less\tooltip.less" />
+    <Content Include="less\variables.less" />
+    <None Include="Properties\PublishProfiles\TestDeploy.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.datetimepicker.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\webapp\DomesticFligt\domesticFlight.js" />
+    <Content Include="Scripts\_references.js" />
+    <None Include="Service References\AirService\Air.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\AirReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\AirService.wsdl" />
+    <None Include="Service References\AirService\AirService1.wsdl" />
+    <None Include="Service References\AirService\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\Rail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\SessionContext_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirExchangeQuoteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirExchangeRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirExchangeTicketingRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirFareDisplayRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirFareRulesRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirMerchandisingDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirMerchandisingOfferAvailabilityRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirPrePayRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirPriceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirRefundQuoteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirRefundRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirRepriceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirRetrieveDocumentRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirTicketingRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirUpsellSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AirVoidDocumentRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.AvailabilitySearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.EMDIssuanceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.EMDRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.FlightDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.FlightInformationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.FlightTimeTableRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.LowFareSearchAsynchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.LowFareSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.RetrieveLowFareSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.ScheduleSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.SeatMapRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse10.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse11.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse12.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse13.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse14.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse15.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse16.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse17.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse18.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse19.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse20.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse21.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse22.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse23.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse24.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse25.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse26.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse4.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse5.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse6.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse7.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse8.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AirService\UniversalApiClient.AirService.serviceResponse9.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelService\AbstractHotelServices.wsdl" />
+    <None Include="Service References\HotelService\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelService\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelService\Hotel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelService\HotelReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelService\HotelServices.wsdl" />
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.BaseHotelSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.HotelDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.HotelKeywordRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.HotelMediaLinksRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.HotelRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.HotelRulesRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.HotelSearchAvailabilityAsynchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.HotelSuperShopperRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.HotelUpsellDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.RetrieveHotelSearchAvailabilityRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse4.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse5.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse6.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse7.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse8.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelService\UniversalApiClient.HotelService.serviceResponse9.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\AirService\configuration91.svcinfo" />
+    <None Include="Service References\AirService\configuration.svcinfo" />
+    <None Include="Service References\AirService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\HotelService\configuration91.svcinfo" />
+    <None Include="Service References\HotelService\configuration.svcinfo" />
+    <None Include="Service References\HotelService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SystemService\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SystemService\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SystemService\System.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SystemService\SystemService.wsdl" />
+    <None Include="Service References\SystemService\SystemService1.wsdl" />
+    <Content Include="Service References\SystemService\UniversalApiClient.SystemService.ExternalCacheAccessRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SystemService\UniversalApiClient.SystemService.PingRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SystemService\UniversalApiClient.SystemService.serviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SystemService\UniversalApiClient.SystemService.serviceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SystemService\UniversalApiClient.SystemService.serviceResponse2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SystemService\UniversalApiClient.SystemService.serviceResponse3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SystemService\UniversalApiClient.SystemService.SystemInfoRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SystemService\UniversalApiClient.SystemService.TimeRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\UniversalService\AbstractUniversalRecordServices.wsdl" />
+    <None Include="Service References\UniversalService\Air.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\Cruise.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\Hotel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\Passive.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\Rail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\SessionContext_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.AckScheduleChangeRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.AirCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.AirCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.AirMerchandisingFulfillmentRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.HotelCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.HotelCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.PassiveCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.PassiveCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.ProviderReservationDisplayDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.ProviderReservationDivideRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.RailCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.SavedTripCreateRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.SavedTripDeleteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.SavedTripModifyRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.SavedTripRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.SavedTripSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse10.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse11.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse12.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse13.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse14.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse15.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse16.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse17.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse18.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse19.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse20.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse21.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse22.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse23.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse4.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse5.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse6.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse7.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse8.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.serviceResponse9.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.UniversalRecordCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.UniversalRecordHistorySearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.UniversalRecordImportRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.UniversalRecordModifyRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.UniversalRecordRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.UniversalRecordSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.VehicleCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UniversalService\UniversalApiClient.UniversalService.VehicleCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\UniversalService\UniversalRecord.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\UniversalRecordReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UniversalService\UniversalRecordServices.wsdl" />
+    <None Include="Service References\UniversalService\Vehicle.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SystemService\configuration91.svcinfo" />
+    <None Include="Service References\SystemService\configuration.svcinfo" />
+    <None Include="Service References\SystemService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UniversalService\configuration91.svcinfo" />
+    <None Include="Service References\UniversalService\configuration.svcinfo" />
+    <None Include="Service References\UniversalService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UtilService\configuration91.svcinfo" />
+    <None Include="Service References\UtilService\configuration.svcinfo" />
+    <None Include="Service References\UtilService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\VechileService\configuration91.svcinfo" />
+    <None Include="Service References\VechileService\configuration.svcinfo" />
+    <None Include="Service References\VechileService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Air\AirSearch.cshtml" />
+    <Content Include="Views\Air\HotelSearch.cshtml" />
+    <None Include="Service References\UtilService\Air.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UtilService\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UtilService\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.AgencyServiceFeeCreateRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.BrandedFareAdminRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.BrandedFareSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.CalculateTaxRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.ContentProviderRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.CreateAgencyFeeMcoRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.CreditCardAuthRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.CurrencyConversionRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.FindEmployeesOnFlightRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.McoSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.McoVoidRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.MctCountRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.MctLookupRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.MirReportRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.ReferenceDataRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.ReferenceDataSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.ReferenceDataUpdateRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse10.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse11.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse12.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse13.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse14.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse15.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse16.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse17.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse18.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse4.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse5.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse6.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse7.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse8.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.serviceResponse9.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.UpsellAdminRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UtilService\UniversalApiClient.UtilService.UpsellSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\UtilService\Util.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UtilService\UtilService.wsdl" />
+    <None Include="Service References\UtilService\UtilService1.wsdl" />
+    <None Include="Service References\VechileService\AbstractVehicleServices.wsdl" />
+    <None Include="Service References\VechileService\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VechileService\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VechileService\SessionContext_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.serviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.serviceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.serviceResponse2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.serviceResponse3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.serviceResponse4.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.serviceResponse5.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.serviceResponse6.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.serviceResponse7.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.VehicleKeywordRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.VehicleLocationDetailRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.VehicleLocationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.VehicleMediaLinksRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.VehicleRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.VehicleRulesRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.VehicleSearchAvailabilityRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\VechileService\UniversalApiClient.VechileService.VehicleUpsellSearchAvailabilityRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\VechileService\Vehicle.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VechileService\VehicleReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VechileService\VehicleServices.wsdl" />
+    <Content Include="Views\Air\Search.cshtml" />
+    <Content Include="Views\Air\DomesticFlight.cshtml" />
+    <Content Include="Views\Shared\_LayoutUpdated.cshtml" />
+    <Content Include="Views\Shared\_SideMenuNav.cshtml" />
+    <None Include="Wsdl\air_v40_0\Air.wsdl" />
+    <None Include="Wsdl\air_v40_0\Air.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\air_v40_0\AirAbstract.wsdl" />
+    <None Include="Wsdl\air_v40_0\AirReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\air_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v32_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v32_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v32_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v33_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v33_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v33_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v35_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v35_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v35_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v37_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v37_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v38_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v38_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v38_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v40_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v40_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\common_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\cruise_v40_0\Cruise.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\cruise_v40_0\CruiseReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\cruise_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\desktopPreference_v32_0\DesktopPreference.wsdl" />
+    <None Include="Wsdl\desktopPreference_v32_0\DesktopPreference.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\desktopPreference_v32_0\DesktopPreferenceAbstract.wsdl" />
+    <None Include="Wsdl\desktopPreference_v32_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\desktopServices_v32_0\Deployment.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\desktopServices_v32_0\DeploymentReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\desktopServices_v32_0\DesktopServices.wsdl" />
+    <None Include="Wsdl\desktopServices_v32_0\DesktopServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\desktopServices_v32_0\DesktopServicesAbstract.wsdl" />
+    <None Include="Wsdl\desktopServices_v32_0\DesktopServicesReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\desktopServices_v32_0\DTSCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\desktopServices_v32_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\filefinishing_v32_0\FileFinishing.wsdl" />
+    <None Include="Wsdl\filefinishing_v32_0\FileFinishing.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\filefinishing_v32_0\FileFinishingAbstract.wsdl" />
+    <None Include="Wsdl\filefinishing_v32_0\FileFinishingReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\filefinishing_v32_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\gdsQueue_v40_0\GDSQueue.wsdl" />
+    <None Include="Wsdl\gdsQueue_v40_0\GDSQueue.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\gdsQueue_v40_0\GDSQueueAbstract.wsdl" />
+    <None Include="Wsdl\gdsQueue_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\hotel_v40_0\Hotel.wsdl" />
+    <None Include="Wsdl\hotel_v40_0\Hotel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\hotel_v40_0\HotelAbstract.wsdl" />
+    <None Include="Wsdl\hotel_v40_0\HotelReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\hotel_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\inventory_v38_0\Inventory.wsdl" />
+    <None Include="Wsdl\inventory_v38_0\Inventory.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\inventory_v38_0\InventoryAbstract.wsdl" />
+    <None Include="Wsdl\inventory_v38_0\InventoryReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\inventory_v38_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\passive_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\passive_v40_0\Passive.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\provisioning_v34_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\provisioning_v34_0\Provisioning.wsdl" />
+    <None Include="Wsdl\provisioning_v34_0\Provisioning.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\provisioning_v34_0\ProvisioningAbstract.wsdl" />
+    <None Include="Wsdl\provisioning_v34_0\ProvisioningReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\rail_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\rail_v40_0\Rail.wsdl" />
+    <None Include="Wsdl\rail_v40_0\Rail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\rail_v40_0\RailAbstract.wsdl" />
+    <None Include="Wsdl\rail_v40_0\RailReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\reporting_v35_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\reporting_v35_0\Reporting.wsdl" />
+    <None Include="Wsdl\reporting_v35_0\Reporting.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\reporting_v35_0\ReportingAbstract.wsdl" />
+    <None Include="Wsdl\reporting_v35_0\ReportingReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\security_v32_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\security_v32_0\Security.wsdl" />
+    <None Include="Wsdl\security_v32_0\Security.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\security_v32_0\SecurityAbstract.wsdl" />
+    <None Include="Wsdl\security_v32_0\SecurityReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\SessionContext_v1\SessionContext_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\sharedBooking_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\sharedBooking_v40_0\SharedBooking.wsdl" />
+    <None Include="Wsdl\sharedBooking_v40_0\SharedBooking.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\sharedBooking_v40_0\SharedBookingAbstract.wsdl" />
+    <None Include="Wsdl\sharedBooking_v40_0\SharedBookingReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\sharedUprofile_v20_0\CustomerProfile.wsdl" />
+    <None Include="Wsdl\sharedUprofile_v20_0\CustomerProfileAbstract.wsdl" />
+    <None Include="Wsdl\sharedUprofile_v20_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\sharedUprofile_v20_0\UProfileAdminReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\sharedUprofile_v20_0\UProfileCoreReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\sharedUprofile_v20_0\UProfileSearchReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\sharedUprofile_v20_0\UProfileShared.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\system_v32_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\system_v32_0\System.wsdl" />
+    <None Include="Wsdl\system_v32_0\System.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\system_v32_0\SystemAbstract.wsdl" />
+    <None Include="Wsdl\terminal_v33_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\terminal_v33_0\Terminal.wsdl" />
+    <None Include="Wsdl\terminal_v33_0\Terminal.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\terminal_v33_0\TerminalAbstract.wsdl" />
+    <None Include="Wsdl\universal_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\universal_v40_0\UniversalRecord.wsdl" />
+    <None Include="Wsdl\universal_v40_0\UniversalRecord.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\universal_v40_0\UniversalRecordAbstract.wsdl" />
+    <None Include="Wsdl\universal_v40_0\UniversalRecordReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\uprofileCommon_v30_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\uprofileCommon_v30_0\UprofileCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\uprofileCommon_v30_0\UprofileCommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\uprofile_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\uprofile_v37_0\UProfile.wsdl" />
+    <None Include="Wsdl\uprofile_v37_0\UProfile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\uprofile_v37_0\UProfileAbstract.wsdl" />
+    <None Include="Wsdl\uprofile_v37_0\UProfileCoreReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\uprofile_v37_0\UProfileReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\util_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\util_v40_0\Util.wsdl" />
+    <None Include="Wsdl\util_v40_0\Util.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\util_v40_0\UtilAbstract.wsdl" />
+    <None Include="Wsdl\vehicle_v40_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\vehicle_v40_0\Vehicle.wsdl" />
+    <None Include="Wsdl\vehicle_v40_0\Vehicle.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Wsdl\vehicle_v40_0\VehicleAbstract.wsdl" />
+    <None Include="Wsdl\vehicle_v40_0\VehicleReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AirService\" />
+    <WCFMetadataStorage Include="Service References\HotelService\" />
+    <WCFMetadataStorage Include="Service References\SystemService\" />
+    <WCFMetadataStorage Include="Service References\UniversalService\" />
+    <WCFMetadataStorage Include="Service References\UtilService\" />
+    <WCFMetadataStorage Include="Service References\VechileService\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25763</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3030/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

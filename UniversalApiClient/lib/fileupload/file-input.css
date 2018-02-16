@@ -1,0 +1,96 @@
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile {
+    width: calc(100% - 40px)!important;
+}
+
+.inputfile + label {
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+     /*pointer-events: none;*/
+    /* in case of FastClick lib use */
+}
+
+.inputfile-custom + label {
+    color: #666;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.inputfile-custom + label {
+    background-color: #fff;
+    padding: 0;
+}
+
+.inputfile-custom:focus + label,
+.inputfile-custom.has-focus + label,
+.inputfile-custom + label:hover {
+    border-color: #722040;
+}
+
+.inputfile-custom + label span {
+    border: 1px solid #ddd;
+    float: left;
+    width: calc(100% - 120px);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 9px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.inputfile-custom + label strong {
+    background: #085d32;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 120px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.inputfile-custom:focus + label strong,
+.inputfile-custom.has-focus + label strong,
+.inputfile-custom + label:hover strong {
+    background-color: #000;
+}
+
+.inputfile-custom + label strong i {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 50em) {
+	.inputfile-custom + label strong {
+		display: block;
+	}
+}

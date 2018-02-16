@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="962c686c-da0b-41d2-9ac7-eb4e559e33a1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\Users\Acer\Documents\Visual Studio 2015\Projects\UniversalApiClient\UniversalApiClient\Wsdl\air_v40_0\Air.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AirService.wsdl" MetadataType="Wsdl" ID="1643d135-a1e3-4160-a11a-5716895aa6cf" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/air_v40_0/AirAbstract.wsdl" />
+    <MetadataFile FileName="Rail.xsd" MetadataType="Schema" ID="5050526f-db90-4f4e-a13c-524cb400e27c" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/rail_v40_0/Rail.xsd" />
+    <MetadataFile FileName="SessionContext_v1.xsd" MetadataType="Schema" ID="d7cc8c5e-9b87-4718-bee2-876502cfd743" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/SessionContext_v1/SessionContext_v1.xsd" />
+    <MetadataFile FileName="Air.xsd" MetadataType="Schema" ID="a87e6e2c-b58a-41cf-8e2c-efe849441c05" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/air_v40_0/Air.xsd" />
+    <MetadataFile FileName="CommonReqRsp.xsd" MetadataType="Schema" ID="af19f1e5-001e-4483-b8ea-a93e2e664599" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/common_v40_0/CommonReqRsp.xsd" />
+    <MetadataFile FileName="AirService1.wsdl" MetadataType="Wsdl" ID="9742e3a7-85f2-4c37-9ec3-3423b158944f" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/air_v40_0/Air.wsdl" />
+    <MetadataFile FileName="AirReqRsp.xsd" MetadataType="Schema" ID="c693e25f-f138-41c0-afee-29431e8a4096" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/air_v40_0/AirReqRsp.xsd" />
+    <MetadataFile FileName="Common.xsd" MetadataType="Schema" ID="d674ce32-c938-4f4a-ab50-cbd6bfea4b95" SourceId="1" SourceUrl="file:///C:/Users/Acer/Documents/Visual Studio 2015/Projects/UniversalApiClient/UniversalApiClient/Wsdl/common_v40_0/Common.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

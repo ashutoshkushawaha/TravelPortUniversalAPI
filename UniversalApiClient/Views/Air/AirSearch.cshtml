@@ -1,0 +1,28 @@
+﻿<div class="testApi">
+    <h2>Flight Schedule Listing...</h2>
+    <a href="/Air/Search" class="btn btn-primary" style="margin-top: 10px; margin-left: -15px; margin-bottom: 10px;">Back to Search</a>
+
+    @if (ViewBag.flightDetails == null)
+    {
+        <h3 style="color: red;">No Flights Available...</h3>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var fd in ViewBag.flightDetails)
+            {
+                <div class="col-md-4" style="margin-bottom: 5px; background-color: lightblue;">
+                    <h5><span style="font-style: italic; color: red;">Flight Number:</span> @fd.FlightNumber</h5>
+                    <h5><span style="font-style: italic; color: red;">Flight Time:</span> @fd.FlightTime</h5>
+                    <h5><span style="font-style: italic; color: red;">Flight Arrival Time:</span> @fd.ArrivalTime</h5>
+                    <h5><span style="font-style: italic; color: red;">Flight Departure Time:</span> @fd.DepartureTime</h5>
+                    <h5><span style="font-style: italic; color: red;">Carrier:</span> @fd.Carrier</h5>
+                    <h5><span style="font-style: italic; color: red;">Origin:</span> @fd.Origin</h5>
+                    <h5><span style="font-style: italic; color: red;">Destination:</span> @fd.Destination</h5>
+                </div>
+            }
+        </div>
+
+        <a href="/Air/Search" class="btn btn-primary" style="margin-top: 10px; margin-left: -15px; margin-bottom: 10px;">Back to Search</a>
+    }
+</div>

@@ -1,0 +1,113 @@
+// main: clearfix.less
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+q,
+small,
+strong,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	border: 0;
+	margin: 0;
+	padding: 0
+}
+
+article,
+aside,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+video,
+object {
+	display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+	content: '.';
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+}
+
+.clearfix {
+	zoom: 1;
+	&:before {
+		.clear;
+	}
+	&:after {
+		.clear;
+		clear: both;
+	}
+}
+
+.container, .row {
+	&:before {
+		.clear;
+	}
+	&:after {
+		.clear;
+		clear: both;
+	}
+}
+
+img,
+object,
+embed {
+	max-width: 100%
+}
+
+img {
+	height: auto
+}

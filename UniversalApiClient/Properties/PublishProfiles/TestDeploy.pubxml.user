@@ -1,0 +1,989 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://ftp.site4now.net/TravelportUniversal</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/27/2017 15:31:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/27/2017 15:31:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/27/2017 15:31:21</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/27/2017 15:31:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>10/27/2017 15:31:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>10/27/2017 15:31:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>10/27/2017 15:31:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>10/27/2017 15:31:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>10/27/2017 15:31:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>10/27/2017 15:31:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>10/27/2017 15:31:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>10/27/2017 15:31:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>10/27/2017 15:31:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>10/27/2017 15:31:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>10/27/2017 15:31:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>10/27/2017 15:31:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/27/2017 15:31:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/27/2017 15:31:21</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>10/27/2017 15:31:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/27/2017 15:31:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/27/2017 15:31:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/27/2017 15:31:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>10/27/2017 15:31:20</publishTime>
+    </File>
+    <File Include="bin/UniversalApiClient.dll">
+      <publishTime>11/13/2017 16:18:50</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>10/27/2017 15:31:23</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>10/27/2017 15:31:05</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>10/27/2017 15:31:05</publishTime>
+    </File>
+    <File Include="Content/bootstrap/alerts.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/badges.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/bootstrap.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/breadcrumbs.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/button-groups.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/buttons.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/carousel.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/close.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/code.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/component-animations.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/dropdowns.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/forms.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/glyphicons.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/grid.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/input-groups.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/jumbotron.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/labels.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/list-group.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/media.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/alerts.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/background-variant.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/border-radius.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/buttons.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/center-block.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/clearfix.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/forms.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/gradients.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/grid-framework.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/grid.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/hide-text.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/image.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/labels.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/list-group.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/nav-divider.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/nav-vertical-align.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/opacity.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/pagination.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/panels.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/progress-bar.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/reset-filter.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/reset-text.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/resize.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/responsive-visibility.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/size.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/tab-focus.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/table-row.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/text-emphasis.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/text-overflow.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/vendor-prefixes.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/modals.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/navbar.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/navs.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/normalize.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/pager.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/pagination.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/panels.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/popovers.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/print.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/progress-bars.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/responsive-embed.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/responsive-utilities.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/scaffolding.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/tables.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/theme.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/thumbnails.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/tooltip.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/type.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/utilities.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/variables.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap/wells.less">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/jquery.datetimepicker.css">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/13/2017 16:14:02</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/27/2017 15:30:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/27/2017 15:31:05</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/27/2017 15:31:05</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/27/2017 15:31:05</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/27/2017 15:31:05</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/27/2017 15:30:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>10/27/2017 15:31:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>10/27/2017 15:31:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>10/27/2017 15:31:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.datetimepicker.js">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>10/27/2017 15:31:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>10/27/2017 15:31:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>10/27/2017 15:31:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/27/2017 15:31:24</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>10/27/2017 15:31:22</publishTime>
+    </File>
+    <File Include="Scripts/moment-with-locales.js">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Scripts/moment-with-locales.min.js">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Scripts/moment.js">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Scripts/moment.min.js">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>10/27/2017 15:31:23</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>10/27/2017 15:31:23</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirExchangeQuoteRsp.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirExchangeRsp.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirExchangeTicketingRsp.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirFareDisplayRsp.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirFareRulesRsp.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirMerchandisingDetailsRsp.datasource">
+      <publishTime>11/01/2017 17:00:13</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirMerchandisingOfferAvailabilityRsp.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirPrePayRsp.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirPriceRsp.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirRefundQuoteRsp.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirRefundRsp.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirRepriceRsp.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirRetrieveDocumentRsp.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirTicketingRsp.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirUpsellSearchRsp.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AirVoidDocumentRsp.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.AvailabilitySearchRsp.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.EMDIssuanceRsp.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.EMDRetrieveRsp.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.FlightDetailsRsp.datasource">
+      <publishTime>11/01/2017 17:00:07</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.FlightInformationRsp.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.FlightTimeTableRsp.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.LowFareSearchAsynchRsp.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.LowFareSearchRsp.datasource">
+      <publishTime>11/01/2017 17:00:07</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.RetrieveLowFareSearchRsp.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.ScheduleSearchRsp.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.SeatMapRsp.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse.datasource">
+      <publishTime>11/01/2017 17:00:07</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse1.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse10.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse11.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse12.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse13.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse14.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse15.datasource">
+      <publishTime>11/01/2017 17:00:10</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse16.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse17.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse18.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse19.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse2.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse20.datasource">
+      <publishTime>11/01/2017 17:00:11</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse21.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse22.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse23.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse24.datasource">
+      <publishTime>11/01/2017 17:00:12</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse25.datasource">
+      <publishTime>11/01/2017 17:00:13</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse26.datasource">
+      <publishTime>11/01/2017 17:00:13</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse3.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse4.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse5.datasource">
+      <publishTime>11/01/2017 17:00:08</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse6.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse7.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse8.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/AirService/UniversalApiClient.AirService.serviceResponse9.datasource">
+      <publishTime>11/01/2017 17:00:09</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.BaseHotelSearchRsp.datasource">
+      <publishTime>11/01/2017 17:00:35</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.HotelDetailsRsp.datasource">
+      <publishTime>11/01/2017 17:00:35</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.HotelKeywordRsp.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.HotelMediaLinksRsp.datasource">
+      <publishTime>11/01/2017 17:00:35</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.HotelRetrieveRsp.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.HotelRulesRsp.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.HotelSearchAvailabilityAsynchRsp.datasource">
+      <publishTime>11/01/2017 17:00:35</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.HotelSuperShopperRsp.datasource">
+      <publishTime>11/01/2017 17:00:37</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.HotelUpsellDetailsRsp.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.RetrieveHotelSearchAvailabilityRsp.datasource">
+      <publishTime>11/01/2017 17:00:37</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse.datasource">
+      <publishTime>11/01/2017 17:00:35</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse1.datasource">
+      <publishTime>11/01/2017 17:00:35</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse2.datasource">
+      <publishTime>11/01/2017 17:00:35</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse3.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse4.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse5.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse6.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse7.datasource">
+      <publishTime>11/01/2017 17:00:36</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse8.datasource">
+      <publishTime>11/01/2017 17:00:37</publishTime>
+    </File>
+    <File Include="Service References/HotelService/UniversalApiClient.HotelService.serviceResponse9.datasource">
+      <publishTime>11/01/2017 17:00:37</publishTime>
+    </File>
+    <File Include="Service References/SystemService/UniversalApiClient.SystemService.ExternalCacheAccessRsp.datasource">
+      <publishTime>11/01/2017 17:01:27</publishTime>
+    </File>
+    <File Include="Service References/SystemService/UniversalApiClient.SystemService.PingRsp.datasource">
+      <publishTime>11/01/2017 17:01:27</publishTime>
+    </File>
+    <File Include="Service References/SystemService/UniversalApiClient.SystemService.serviceResponse.datasource">
+      <publishTime>11/01/2017 17:01:27</publishTime>
+    </File>
+    <File Include="Service References/SystemService/UniversalApiClient.SystemService.serviceResponse1.datasource">
+      <publishTime>11/01/2017 17:01:27</publishTime>
+    </File>
+    <File Include="Service References/SystemService/UniversalApiClient.SystemService.serviceResponse2.datasource">
+      <publishTime>11/01/2017 17:01:27</publishTime>
+    </File>
+    <File Include="Service References/SystemService/UniversalApiClient.SystemService.serviceResponse3.datasource">
+      <publishTime>11/01/2017 17:01:27</publishTime>
+    </File>
+    <File Include="Service References/SystemService/UniversalApiClient.SystemService.SystemInfoRsp.datasource">
+      <publishTime>11/01/2017 17:01:27</publishTime>
+    </File>
+    <File Include="Service References/SystemService/UniversalApiClient.SystemService.TimeRsp.datasource">
+      <publishTime>11/01/2017 17:01:27</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.AckScheduleChangeRsp.datasource">
+      <publishTime>11/01/2017 17:02:20</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.AirCancelRsp.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.AirCreateReservationRsp.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.AirMerchandisingFulfillmentRsp.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.HotelCancelRsp.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.HotelCreateReservationRsp.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.PassiveCancelRsp.datasource">
+      <publishTime>11/01/2017 17:02:25</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.PassiveCreateReservationRsp.datasource">
+      <publishTime>11/01/2017 17:02:25</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.ProviderReservationDisplayDetailsRsp.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.ProviderReservationDivideRsp.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.RailCreateReservationRsp.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.SavedTripCreateRsp.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.SavedTripDeleteRsp.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.SavedTripModifyRsp.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.SavedTripRetrieveRsp.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.SavedTripSearchRsp.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse.datasource">
+      <publishTime>11/01/2017 17:02:20</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse1.datasource">
+      <publishTime>11/01/2017 17:02:20</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse10.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse11.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse12.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse13.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse14.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse15.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse16.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse17.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse18.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse19.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse2.datasource">
+      <publishTime>11/01/2017 17:02:20</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse20.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse21.datasource">
+      <publishTime>11/01/2017 17:02:24</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse22.datasource">
+      <publishTime>11/01/2017 17:02:25</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse23.datasource">
+      <publishTime>11/01/2017 17:02:25</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse3.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse4.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse5.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse6.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse7.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse8.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.serviceResponse9.datasource">
+      <publishTime>11/01/2017 17:02:22</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.UniversalRecordCancelRsp.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.UniversalRecordHistorySearchRsp.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.UniversalRecordImportRsp.datasource">
+      <publishTime>11/01/2017 17:02:20</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.UniversalRecordModifyRsp.datasource">
+      <publishTime>11/01/2017 17:02:21</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.UniversalRecordRetrieveRsp.datasource">
+      <publishTime>11/01/2017 17:02:20</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.UniversalRecordSearchRsp.datasource">
+      <publishTime>11/01/2017 17:02:20</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.VehicleCancelRsp.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UniversalService/UniversalApiClient.UniversalService.VehicleCreateReservationRsp.datasource">
+      <publishTime>11/01/2017 17:02:23</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.AgencyServiceFeeCreateRsp.datasource">
+      <publishTime>11/01/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.BrandedFareAdminRsp.datasource">
+      <publishTime>11/01/2017 17:03:26</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.BrandedFareSearchRsp.datasource">
+      <publishTime>11/01/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.CalculateTaxRsp.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.ContentProviderRetrieveRsp.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.CreateAgencyFeeMcoRsp.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.CreditCardAuthRsp.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.CurrencyConversionRsp.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.FindEmployeesOnFlightRsp.datasource">
+      <publishTime>11/01/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.McoSearchRsp.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.McoVoidRsp.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.MctCountRsp.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.MctLookupRsp.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.MirReportRetrieveRsp.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.ReferenceDataRetrieveRsp.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.ReferenceDataSearchRsp.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.ReferenceDataUpdateRsp.datasource">
+      <publishTime>11/01/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse.datasource">
+      <publishTime>11/01/2017 17:03:26</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse1.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse10.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse11.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse12.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse13.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse14.datasource">
+      <publishTime>11/01/2017 17:03:29</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse15.datasource">
+      <publishTime>11/01/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse16.datasource">
+      <publishTime>11/01/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse17.datasource">
+      <publishTime>11/01/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse18.datasource">
+      <publishTime>11/01/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse2.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse3.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse4.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse5.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse6.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse7.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse8.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.serviceResponse9.datasource">
+      <publishTime>11/01/2017 17:03:28</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.UpsellAdminRsp.datasource">
+      <publishTime>11/01/2017 17:03:26</publishTime>
+    </File>
+    <File Include="Service References/UtilService/UniversalApiClient.UtilService.UpsellSearchRsp.datasource">
+      <publishTime>11/01/2017 17:03:27</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.serviceResponse.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.serviceResponse1.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.serviceResponse2.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.serviceResponse3.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.serviceResponse4.datasource">
+      <publishTime>11/01/2017 17:04:18</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.serviceResponse5.datasource">
+      <publishTime>11/01/2017 17:04:18</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.serviceResponse6.datasource">
+      <publishTime>11/01/2017 17:04:18</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.serviceResponse7.datasource">
+      <publishTime>11/01/2017 17:04:18</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.VehicleKeywordRsp.datasource">
+      <publishTime>11/01/2017 17:04:18</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.VehicleLocationDetailRsp.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.VehicleLocationRsp.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.VehicleMediaLinksRsp.datasource">
+      <publishTime>11/01/2017 17:04:18</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.VehicleRetrieveRsp.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.VehicleRulesRsp.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.VehicleSearchAvailabilityRsp.datasource">
+      <publishTime>11/01/2017 17:04:17</publishTime>
+    </File>
+    <File Include="Service References/VechileService/UniversalApiClient.VechileService.VehicleUpsellSearchAvailabilityRsp.datasource">
+      <publishTime>11/01/2017 17:04:18</publishTime>
+    </File>
+    <File Include="Views/Air/AirSearch.cshtml">
+      <publishTime>11/13/2017 15:28:57</publishTime>
+    </File>
+    <File Include="Views/Air/HotelSearch.cshtml">
+      <publishTime>11/03/2017 18:41:09</publishTime>
+    </File>
+    <File Include="Views/Air/Search.cshtml">
+      <publishTime>11/13/2017 16:15:12</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>10/27/2017 15:30:52</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>10/27/2017 15:30:52</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>11/13/2017 15:25:07</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>10/27/2017 15:30:52</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/13/2017 15:15:39</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>10/27/2017 15:30:52</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/27/2017 15:30:52</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/13/2017 16:21:46</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

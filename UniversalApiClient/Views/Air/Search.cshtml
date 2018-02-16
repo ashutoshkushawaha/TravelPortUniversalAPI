@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 form-div">
+        <form action="/Air/AirSearch" method="post" class="form-horizontal" name="air-search-form">
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="form-label" for="Origin">From :</label>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" id="origin" name="origin" type="text" placeholder="From (eg KTM)">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="form-label" for="Destination">To :</label>
+                </div>
+                <div class="col-md-6">
+                    <input id="Destination" class="form-control" name="destination" type="text" placeholder="To (eg DEL)">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="form-label" for="From">Departure :</label>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" id="departure" name="departure" placeholder="Departure" type="text">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="form-label" for="To">Return :</label>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" id="returning" name="returning" placeholder="Return" type="text">
+                </div>
+            </div>
+
+            <!-- <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="form-label" for="Adults">Adults :</label>
+                </div>
+                <div class="col-md-6">
+                    <select name="adults" id="searchcmbAdults" class="form-control">
+                        <option selected="selected" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="form-label" for="Childrens">Child (2-12) :</label>
+                </div>
+                <div class="col-md-6">
+                    <select id="searchcmbChildren" name="children" class="form-control">
+                        <option selected="selected" value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="form-label" for="Infants">Infants (0-2) :</label>
+                </div>
+                <div class="col-md-6">
+                    <select id="searchcmbInfants" name="infants" class="form-control">
+                        <option selected="selected" value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div> -->
+
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="form-label" for="Gds">Travelport System :</label>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-control" id="Gds" name="gds">
+                        <option selected="selected" value="1G">Galileo</option>
+                        <option value="1">Apollo</option>
+                        <option value="2">Worldspan</option>
+                    </select>
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-danger pull-right">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>
